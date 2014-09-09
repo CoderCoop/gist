@@ -1,0 +1,20 @@
+A bug in the Play Store causes it to crash when clicking links to other Play Store apps. This happens if the URL is linked in the app description. A normal URL is automatically linked without using HTML, but a URL to a Play Store app requires HTML. When using the HTML link in an app description, clicking it causes Play Store to crash.
+Video demo: http://youtu.be/aXqhoshsaJ0
+
+Tested Sep. 1 2014 on Android 4.4
+
+**Warning: This link will crash Play Store:**
+Play Store app link in HTML:
+<a href="https://play.google.com/store/apps/details?id=com.google.android.apps.maps">link</a>
+
+Plain URL to a Play store app:
+https://play.google.com/store/apps/details?id=com.google.android.apps.maps
+
+Plain URL (without HTML)
+https://www.google.com
+
+Play Store URL Workaround, use a URL shortener like Bitly:
+https://bit.ly/1xB8bpR
+
+
+Source code of this app description: 
